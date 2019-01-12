@@ -1,0 +1,8 @@
+DFS:
+start some vertex at the graph, proceding to some sequence of edges, going as deap as possible until reach some dead end.
+
+The array size should be same as vertex size.
+any vertex can get any no of the array but convention is it should use alphabetical order.
+
+
+Traversal ust start from an edge
