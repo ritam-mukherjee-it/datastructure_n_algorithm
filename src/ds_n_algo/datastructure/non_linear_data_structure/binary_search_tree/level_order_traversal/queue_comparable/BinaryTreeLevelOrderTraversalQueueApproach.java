@@ -2,8 +2,9 @@ package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.lev
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 /*All tree a private class 'Node' which specify building block of a TREE*/
- class Node<X extends Comparable<X>>{
+class Node<X extends Comparable<X>> {
 
     /*It represents the value of node,which instantiate at the time of node creation*/
     private X item;
@@ -19,9 +20,9 @@ import java.util.Queue;
         2.Also use initialize all pointer's*/
     public Node(X item) {
         this.item = item;
-        this.left=null;
-        this.right=null;
-        this.parent=null;
+        this.left = null;
+        this.right = null;
+        this.parent = null;
     }
 
     public Node getLeft() {
@@ -58,47 +59,59 @@ import java.util.Queue;
 
 
 }
-public class BinaryTree_LevelOrder_Comparable_Queue<X extends Comparable<X>> {
 
-    Node Root;
+class BinarySearchTree<X extends Comparable> {
+    Node root;
 
     public Node getRoot() {
-        return Root;
+        return root;
     }
 
     public void setRoot(Node root) {
-        Root = root;
+        this.root = root;
     }
 
-    public void PrintLevelOrder(Node root) {
+    /**
+     * @apiNote For each node, first the node is visited and then it’s child nodes are put in a FIFO queue.
+     * @param root
+     */
+    public void printLevelOrder(Node root) {
         if (root == null)
             throw new IllegalArgumentException("Underflow");
         Queue<Node> queue = new LinkedList<>();
 
         queue.add(root);
-        while(!queue.isEmpty()){
-            Node tempNode=queue.poll();
-            System.out.print(tempNode.getItem()+" ");
+        while (!queue.isEmpty()) {
+            Node tempNode = queue.poll();
+            System.out.print(tempNode.getItem() + " ");
 
-            if(tempNode.getLeft()!=null)
+            if (tempNode.getLeft() != null)
                 queue.add(tempNode.getLeft());
-            if(tempNode.getRight()!=null)
+            if (tempNode.getRight() != null)
                 queue.add(tempNode.getRight());
         }
     }
-    public static void main(String[] args) {
-        BinaryTree_LevelOrder_Comparable_Queue tree=new BinaryTree_LevelOrder_Comparable_Queue();
 
-        Node root=new Node(1);
+    public void printLevelOrder() {
+        printLevelOrder(this.root);
+    }
+}
+
+public class BinaryTreeLevelOrderTraversalQueueApproach<X extends Comparable<X>> {
+
+    public static void main(String[] args) {
+        BinarySearchTree tree = new BinarySearchTree();
+
+        Node root = new Node(1);
         root.setLeft(new Node(6));
-        root.setRight( new Node(8));
+        root.setRight(new Node(8));
         root.getLeft().setLeft(new Node(10));
         root.getLeft().setRight(new Node(12));
         root.getRight().setLeft(new Node(16));
         root.getRight().setRight(new Node(18));
 
         tree.setRoot(root);
-        tree.PrintLevelOrder(tree.getRoot());
+        tree.printLevelOrder();
     }
 
 }

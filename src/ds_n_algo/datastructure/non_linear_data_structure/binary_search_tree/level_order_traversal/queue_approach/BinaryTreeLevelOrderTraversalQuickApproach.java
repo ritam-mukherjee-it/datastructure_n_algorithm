@@ -20,7 +20,7 @@ import java.util.Queue;
         Time Complexity: O(n) where n is number of nodes in the binary tree
         *
  */
-public class BinaryTree_LevelOrder_Queue_II {
+public class BinaryTreeLevelOrderTraversalQuickApproach {
 
     Node root;
     public void PrintLevelOrder(Node root){
@@ -40,11 +40,10 @@ public class BinaryTree_LevelOrder_Queue_II {
                queue.add(tempNode.right);
        }
 
-
     }
 
     public static void main(String[] args) {
-        BinaryTree_LevelOrder_Queue_II tree=new BinaryTree_LevelOrder_Queue_II();
+        BinaryTreeLevelOrderTraversalQuickApproach tree=new BinaryTreeLevelOrderTraversalQuickApproach();
         tree.root= new Node(1);
         tree.root.left= new Node(8);
         tree.root.right= new Node(6);
