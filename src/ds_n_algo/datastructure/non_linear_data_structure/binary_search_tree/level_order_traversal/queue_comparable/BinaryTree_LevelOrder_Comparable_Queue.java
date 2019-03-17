@@ -76,24 +76,14 @@ public class BinaryTree_LevelOrder_Comparable_Queue<X extends Comparable<X>> {
         Queue<Node> queue = new LinkedList<>();
 
         queue.add(root);
+        while(!queue.isEmpty()){
+            Node tempNode=queue.poll();
+            System.out.print(tempNode.getItem()+" ");
 
-        while (true) {
-            int node_count = queue.size();
-            if (node_count == 0)
-                break;
-
-            while (node_count > 0) {
-                Node node = queue.peek();
-                System.out.println(node.getItem());
-                queue.remove();//elemenate printed element
-
-                if (node.getLeft() != null)
-                    queue.add(node.getLeft());
-                if (node.getRight() != null)
-                    queue.add(node.getRight());
-                node_count--;
-            }
-            System.out.println("<->");
+            if(tempNode.getLeft()!=null)
+                queue.add(tempNode.getLeft());
+            if(tempNode.getRight()!=null)
+                queue.add(tempNode.getRight());
         }
     }
     public static void main(String[] args) {
