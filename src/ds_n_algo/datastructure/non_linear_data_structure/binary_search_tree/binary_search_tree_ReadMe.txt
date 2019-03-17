@@ -216,7 +216,7 @@ Time Complexity: O(n) where n is number of nodes in the binary tree
 	 HD for root is 0, a right edge (edge connecting to right subtree) is considered as +1 horizontal distance
 	 and a left edge is considered as -1 horizontal distance.
 	
-We can do preorder traversal of the given Binary Tree. While traversing the tree, we can recursively calculate HDs. 
+We can do pre-order traversal of the given Binary Tree. While traversing the tree, we can recursively calculate HDs.
 We initially pass the horizontal distance as 0 for root. 
 			For left subtree, we pass the Horizontal Distance as Horizontal distance of root minus 1. 
 			For right subtree, we pass the Horizontal Distance as Horizontal Distance of root plus 1. 
