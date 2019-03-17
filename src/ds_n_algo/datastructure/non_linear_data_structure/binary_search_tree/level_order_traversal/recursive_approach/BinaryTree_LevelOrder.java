@@ -12,7 +12,7 @@ METHOD 1 (Use function to print a given level)
 
         Algorithm:
         There are basically two functions in this method.
-        1. printGivenLevel	:	First One is to print all nodes at a given level;
+        1. printGivenLevel	:	Print all nodes at a given level;
         2. printLevelorder	:	The other is to print level order traversal of the tree .
         printLevelorder makes use of printGivenLevel to print nodes at all levels one by one starting from root.
 
@@ -120,29 +120,37 @@ public class  BinaryTree_LevelOrder {
         }
     }
 
+/*
 
     void printLevelOrder_queue_approach(){
         Queue<Node> queue = new LinkedList<Node>();
         queue.add(root);
         while (!queue.isEmpty())
         {
-            /* poll() removes the present head.
+            */
+/* poll() removes the present head.
             For more information on poll() visit
-            http://www.tutorialspoint.com/java/util/linkedlist_poll.htm */
+            http://www.tutorialspoint.com/java/util/linkedlist_poll.htm *//*
+
             Node tempNode = queue.poll();
             System.out.print(tempNode.data + " ");
 
-            /*Enqueue left child */
+            */
+/*Enqueue left child *//*
+
             if (tempNode.left != null) {
                 queue.add(tempNode.left);
             }
 
-            /*Enqueue right child */
+            */
+/*Enqueue right child *//*
+
             if (tempNode.right != null) {
                 queue.add(tempNode.right);
             }
         }
     }
+*/
 
 
 
@@ -162,6 +170,6 @@ public class  BinaryTree_LevelOrder {
         System.out.println("Level order traversal of binary tree is ");
         tree.printLevelOrder_classical_approach();
         System.out.println("\n---------------------------");
-        tree.printLevelOrder_queue_approach();
+      //  tree.printLevelOrder_queue_approach();
     }
 }
