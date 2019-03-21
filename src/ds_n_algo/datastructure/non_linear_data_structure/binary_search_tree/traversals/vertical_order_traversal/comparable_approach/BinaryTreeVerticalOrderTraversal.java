@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.vertical_order_traversal.comparable_approach;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.vertical_order_traversal.comparable_approach;
 
 import java.util.Map;
 import java.util.TreeMap;

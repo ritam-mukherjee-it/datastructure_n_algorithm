@@ -1,7 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.level_order_traversal.recursive_approach;
-
-import java.util.LinkedList;
-import java.util.Queue;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.level_order_traversal.recursive_approach;
 
 /**
 Source  :   GeekForGeek
