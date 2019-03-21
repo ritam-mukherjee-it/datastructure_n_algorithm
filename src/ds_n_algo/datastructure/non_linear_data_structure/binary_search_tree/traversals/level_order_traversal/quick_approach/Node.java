@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.level_order_traversal.queue_approach;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.level_order_traversal.quick_approach;
 
 /**
  Source  :   GeekForGeek

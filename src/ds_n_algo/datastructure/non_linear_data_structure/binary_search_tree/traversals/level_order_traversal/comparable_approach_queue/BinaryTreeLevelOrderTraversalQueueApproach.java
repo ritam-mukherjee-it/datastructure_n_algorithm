@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.level_order_traversal.queue_comparable;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.traversals.level_order_traversal.comparable_approach_queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
