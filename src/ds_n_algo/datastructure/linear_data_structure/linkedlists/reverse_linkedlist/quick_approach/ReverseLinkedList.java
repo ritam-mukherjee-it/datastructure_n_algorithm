@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.linear_data_structure.linkedlists.reverse_linkedlist;
+package ds_n_algo.datastructure.linear_data_structure.linkedlists.reverse_linkedlist.quick_approach;
 
 class Node {
 
