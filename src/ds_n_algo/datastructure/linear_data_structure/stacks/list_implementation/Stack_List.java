@@ -47,11 +47,12 @@ public class Stack_List {
     }
 
     public void display(){
-        while(top!=null){
+        Node current=top;
+        while(current!=null){
 
-            System.out.println("[   "+top.data+"    ]");
+            System.out.println("[   "+current.data+"    ]");
             System.out.println("    ||  ");
-            pop();
+            current=current.next;
         }
     }
 
@@ -63,6 +64,11 @@ public class Stack_List {
         stack.push(44);
         stack.push(55);
 
+        stack.display();
+
+        stack.pop();
+        stack.pop();
+        System.out.println("---------------------------");
         stack.display();
     }
 }
