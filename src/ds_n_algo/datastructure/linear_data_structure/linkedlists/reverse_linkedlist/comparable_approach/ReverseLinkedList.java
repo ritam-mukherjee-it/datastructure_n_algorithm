@@ -32,8 +32,6 @@ class LinkedList<X extends Comparable>{
     private Node first;
     private Node last;
 
-
-
     /*nodeCount variable responsible to keep count of size*/
     private int nodeCount;
 
