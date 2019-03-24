@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.right_view_determine;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.view_determine.right_view_determine;
 
 
 // A binary tree node

@@ -14,7 +14,7 @@ public class PrintAllSubsets {
             System.out.print("{ ");
 
             // Print current subset
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < n; j++) {
 
                 // (1<<j) is a number with jth bit 1
                 // so when we 'and' them with the
@@ -23,7 +23,7 @@ public class PrintAllSubsets {
                 // are not
                 if ((i & (1 << j)) > 0)
                     System.out.print(set[j] + " ");
-
+            }
             System.out.println("}");
         }
     }

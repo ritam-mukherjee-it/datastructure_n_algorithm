@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.top_view_determine.map_approach;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.view_determine.top_view_determine.map_approach;
 
 import java.util.TreeMap;
 import java.util.Vector;

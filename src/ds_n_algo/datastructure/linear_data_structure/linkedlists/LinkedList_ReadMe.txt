@@ -74,7 +74,7 @@ Delete At Particular Postion
 3. Invalid Position? 
 		POSITION >= '0' && POSITION<= length -1   => "Invalid Position"
 4. Valid Position?
-	A. Is Inserttion and the First Location?
+	A. Is Insertion and the First Location?
 			POSITION == 1? - YES
 			HEAD=HEAD.NEXT
 	B. Is position more than 1?

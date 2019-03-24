@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.left_view_determine;
+package ds_n_algo.datastructure.non_linear_data_structure.binary_search_tree.view_determine.left_view_determine;
 
 // Java program to print left view of binary tree
 /* Class containing left and right child of current
