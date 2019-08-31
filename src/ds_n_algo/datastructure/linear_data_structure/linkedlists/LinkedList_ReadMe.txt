@@ -7,7 +7,7 @@
 
 Properties:
 1. Simple Linked List des not allow random access to its data. So by index we can't access it's data.
-2. For any basic operation like insert a node in middle possition, delete a node or getting a nod's value
+2. For any basic operation like insert a node in middle position, delete a node or getting a node's value
 of particular location requires sequential scanning for most or all of the list elements.
 
 Complexity

@@ -77,10 +77,10 @@ class LinkedList<X extends Comparable>{
         Node next=null;
 
         while (current!=null){
-            next=current.getNextNode(); /*NEXT variable holding the current element's next element*/
+            next=current.getNextNode(); /*NEXT pointer referencing next element of CURRENT pointer's object*/
             current.setNextNode(prev); /* Direction change */
-            prev=current;  /*Movement of CURRENT pointer*/
-            current=next; /*shift for while loop processing*/
+            prev=current;  /* PREV pointer now pointing to CURRENT pointer's element*/
+            current=next; /* CURRENT pointer now pointing to NEXT pointer's object*/
         }
         node=prev; /*because prev at last holding current object reference*/
         return node;
@@ -90,7 +90,7 @@ class LinkedList<X extends Comparable>{
        return reverse(this.first);
     }
 
-    // prints content of double linked list
+    // prints content of  linked list
     void printList(Node node) {
         while (node != null) {
             System.out.print(node.getItem() + "-> ");

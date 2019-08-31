@@ -29,23 +29,24 @@ class ListNode {
 public  class Merge_LinkedList {
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
-        ListNode p = head;
+        ListNode pointerNode = head;
+
 
         while(l1!=null||l2!=null){
             if(l1!=null&&l2!=null){
                 if(l1.val < l2.val){
-                    p.next = l1;
+                    pointerNode.next = l1;
                     l1=l1.next;
                 }else{
-                    p.next=l2;
+                    pointerNode.next=l2;
                     l2=l2.next;
                 }
-                p = p.next;
+                pointerNode = pointerNode.next;
             }else if(l1==null){
-                p.next = l2;
+                pointerNode.next = l2;
                 break;
             }else if(l2==null){
-                p.next = l1;
+                pointerNode.next = l1;
                 break;
             }
         }
@@ -65,12 +66,15 @@ public  class Merge_LinkedList {
         headA.next = new ListNode(2);
         headA.next.next = new ListNode(3);
         headA.next.next.next = new ListNode(5);
+        headA.next.next.next.next = new ListNode(8);
 
 
         ListNode headB=new ListNode(1);
         headB.next = new ListNode(2);
         headB.next.next = new ListNode(3);
         headB.next.next.next = new ListNode(4);
+        headB.next.next.next.next = new ListNode(7);
+
         ListNode headC=mergeTwoLists(headA,headB);
 
          printList(headC);

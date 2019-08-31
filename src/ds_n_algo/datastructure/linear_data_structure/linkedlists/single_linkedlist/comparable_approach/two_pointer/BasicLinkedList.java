@@ -1,4 +1,4 @@
-package ds_n_algo.datastructure.linear_data_structure.linkedlists.single_linkedlist.comparable_approach;
+package ds_n_algo.datastructure.linear_data_structure.linkedlists.single_linkedlist.comparable_approach.two_pointer;
 
 /*Node represents basic underlying data structure within LinkedList*/
 class Node<X extends Comparable> {
